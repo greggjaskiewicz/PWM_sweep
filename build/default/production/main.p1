@@ -3,6 +3,28 @@ Version 4.0 HI-TECH Software Intermediate Code
 "71 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 71: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
+"1576 /Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h
+[; ;/Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h: 1576:     struct {
+[s S88 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S88 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 ]
+"1575
+[; ;/Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h: 1575: typedef union {
+[u S87 `S88 1 ]
+[n S87 . . ]
+"1585
+[; ;/Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h: 1585: extern volatile TRISCbits_t TRISCbits __attribute__((address(0x08E)));
+[v _TRISCbits `VS87 ~T0 @X0 0 e@142 ]
+"2187
+[; ;/Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h: 2187:     struct {
+[s S119 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S119 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 ]
+"2186
+[; ;/Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h: 2186: typedef union {
+[u S118 `S119 1 ]
+[n S118 . . ]
+"2196
+[; ;/Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h: 2196: extern volatile LATCbits_t LATCbits __attribute__((address(0x10E)));
+[v _LATCbits `VS118 ~T0 @X0 0 e@270 ]
 "124 ./mcc_generated_files/pwm1.h
 [; ;./mcc_generated_files/pwm1.h: 124: void PWM1_LoadDutyValue(uint16_t dutyValue);
 [v _PWM1_LoadDutyValue `(v ~T0 @X0 0 ef1`us ]
@@ -805,54 +827,72 @@ Version 4.0 HI-TECH Software Intermediate Code
 "52
 [; ;main.c: 52:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"69
-[; ;main.c: 69:     int pr2_initial_value=0x61;
+"55
+[; ;main.c: 55:     TRISCbits.TRISC0 = 0;
+[e = . . _TRISCbits 0 0 -> -> 0 `i `uc ]
+"56
+[; ;main.c: 56:     TRISCbits.TRISC1 = 0;
+[e = . . _TRISCbits 0 1 -> -> 0 `i `uc ]
+"73
+[; ;main.c: 73:     int pr2_initial_value=0x61;
 [v _pr2_initial_value `i ~T0 @X0 1 a ]
 [e = _pr2_initial_value -> 97 `i ]
-"70
-[; ;main.c: 70:     int pr2_value=pr2_initial_value;
+"74
+[; ;main.c: 74:     int pr2_value=pr2_initial_value;
 [v _pr2_value `i ~T0 @X0 1 a ]
 [e = _pr2_value _pr2_initial_value ]
-"72
-[; ;main.c: 72:     while (1) {
+"76
+[; ;main.c: 76:     while (1) {
 [e :U 703 ]
 {
-"73
-[; ;main.c: 73:         PWM1_LoadDutyValue(150);
-[e ( _PWM1_LoadDutyValue (1 -> -> 150 `i `us ]
-"74
-[; ;main.c: 74:         _delay((unsigned long)((10)*(32000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-"75
-[; ;main.c: 75:         PWM1_LoadDutyValue(249);
-[e ( _PWM1_LoadDutyValue (1 -> -> 249 `i `us ]
-"76
-[; ;main.c: 76:         _delay((unsigned long)((10)*(32000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"77
+[; ;main.c: 77:         LATCbits.LATC0 = 1;
+[e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
 "78
-[; ;main.c: 78:          PR2 = pr2_value;
-[e = _PR2 -> _pr2_value `uc ]
-"79
-[; ;main.c: 79:          pr2_value--;
-[e -- _pr2_value -> 1 `i ]
+[; ;main.c: 78:         LATCbits.LATC1 = 0;
+[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
+"80
+[; ;main.c: 80:         PWM1_LoadDutyValue(150);
+[e ( _PWM1_LoadDutyValue (1 -> -> 150 `i `us ]
 "81
-[; ;main.c: 81:          if (pr2_value < 0x40) {
+[; ;main.c: 81:         _delay((unsigned long)((100)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"83
+[; ;main.c: 83:         LATCbits.LATC0 = 0;
+[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
+"84
+[; ;main.c: 84:         LATCbits.LATC1 = 1;
+[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
+"86
+[; ;main.c: 86:         PWM1_LoadDutyValue(249);
+[e ( _PWM1_LoadDutyValue (1 -> -> 249 `i `us ]
+"87
+[; ;main.c: 87:         _delay((unsigned long)((100)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"89
+[; ;main.c: 89:          PR2 = pr2_value;
+[e = _PR2 -> _pr2_value `uc ]
+"90
+[; ;main.c: 90:          pr2_value--;
+[e -- _pr2_value -> 1 `i ]
+"92
+[; ;main.c: 92:          if (pr2_value < 0x40) {
 [e $ ! < _pr2_value -> 64 `i 705  ]
 {
-"82
-[; ;main.c: 82:              pr2_value = pr2_initial_value;
+"93
+[; ;main.c: 93:              pr2_value = pr2_initial_value;
 [e = _pr2_value _pr2_initial_value ]
-"83
-[; ;main.c: 83:          }
+"94
+[; ;main.c: 94:          }
 }
 [e :U 705 ]
-"84
-[; ;main.c: 84:     }
+"95
+[; ;main.c: 95:     }
 }
 [e :U 702 ]
 [e $U 703  ]
 [e :U 704 ]
-"85
-[; ;main.c: 85: }
+"96
+[; ;main.c: 96: }
 [e :UE 701 ]
 }

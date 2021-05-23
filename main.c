@@ -51,6 +51,10 @@ void main(void)
     // initialize the device
     SYSTEM_Initialize();
 
+    // eable outputs for our LEDs
+    TRISCbits.TRISC0 = 0; 
+    TRISCbits.TRISC1 = 0; 
+
     // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
     // Use the following macros to:
 
@@ -70,10 +74,17 @@ void main(void)
     int pr2_value=pr2_initial_value;
     
     while (1) {
+        LATCbits.LATC0 = 1;
+        LATCbits.LATC1 = 0;
+
         PWM1_LoadDutyValue(150);
-        __delay_ms(10);
+        __delay_ms(100);
+        
+        LATCbits.LATC0 = 0;
+        LATCbits.LATC1 = 1;
+
         PWM1_LoadDutyValue(249);
-        __delay_ms(10);
+        __delay_ms(100);
         
          PR2 = pr2_value;
          pr2_value--;

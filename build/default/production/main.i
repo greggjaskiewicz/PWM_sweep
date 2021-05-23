@@ -8303,15 +8303,26 @@ void main(void)
 {
 
     SYSTEM_Initialize();
-# 69 "main.c"
+
+
+    TRISCbits.TRISC0 = 0;
+    TRISCbits.TRISC1 = 0;
+# 73 "main.c"
     int pr2_initial_value=0x61;
     int pr2_value=pr2_initial_value;
 
     while (1) {
+        LATCbits.LATC0 = 1;
+        LATCbits.LATC1 = 0;
+
         PWM1_LoadDutyValue(150);
-        _delay((unsigned long)((10)*(32000000/4000.0)));
+        _delay((unsigned long)((100)*(32000000/4000.0)));
+
+        LATCbits.LATC0 = 0;
+        LATCbits.LATC1 = 1;
+
         PWM1_LoadDutyValue(249);
-        _delay((unsigned long)((10)*(32000000/4000.0)));
+        _delay((unsigned long)((100)*(32000000/4000.0)));
 
          PR2 = pr2_value;
          pr2_value--;

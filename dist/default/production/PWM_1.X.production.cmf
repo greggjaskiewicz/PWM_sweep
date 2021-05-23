@@ -13,18 +13,18 @@
 %PSECTS
 $dist/default/production/PWM_1.X.production.o
 cinit CODE 0 7FE 7FE 2 2
-text1 CODE 0 787 787 13 2
-text2 CODE 0 74F 74F 4 2
-text3 CODE 0 763 763 8 2
-text4 CODE 0 75B 75B 8 2
-text5 CODE 0 753 753 8 2
-text6 CODE 0 79A 79A 21 2
-text7 CODE 0 76B 76B 9 2
-text8 CODE 0 774 774 13 2
-maintext CODE 0 7BB 7BB 43 2
-cstackCOMMON COMMON 1 70 70 7 1
+text1 CODE 0 776 776 13 2
+text2 CODE 0 73E 73E 4 2
+text3 CODE 0 752 752 8 2
+text4 CODE 0 74A 74A 8 2
+text5 CODE 0 742 742 8 2
+text6 CODE 0 789 789 21 2
+text7 CODE 0 75A 75A 9 2
+text8 CODE 0 763 763 13 2
+maintext CODE 0 7AA 7AA 54 2
+cstackCOMMON COMMON 1 70 70 8 1
 config CONFIG 4 8007 8007 4 2
-$/tmp/xc6YTP2it.o
+$/tmp/xc4i1uxs8.o
 reset_vec CODE 0 0 0 1 2
 end_init CODE 0 1 1 1 2
 config CONFIG 4 8007 8007 4 2
@@ -40,8 +40,8 @@ RAM 120-16F 1
 BANK0 20-6F 1
 BANK1 A0-EF 1
 BANK2 120-16F 1
-CONST 2-74E 2
-ENTRY 2-74E 2
+CONST 2-73D 2
+ENTRY 2-73D 2
 IDLOC 8000-8003 2
 SFR10 500-56F 1
 SFR11 580-5EF 1
@@ -66,7 +66,7 @@ SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
 STACK 2000-20EF 1
-CODE 2-74E 2
+CODE 2-73D 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
@@ -78,10 +78,10 @@ SFR7 380-3EF 1
 SFR8 400-46F 1
 SFR9 480-4EF 1
 BIGRAM 2000-20EF 1
-COMMON 77-7D 1
+COMMON 78-7D 1
 EEDATA F000-F0FF 2
-STRCODE 2-74E 2
-STRING 2-74E 2
+STRCODE 2-73D 2
+STRING 2-73D 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -96,87 +96,92 @@ STRING 2-74E 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production/PWM_1.X.production.o
-7FE cinit CODE >3324:/tmp/xctZADno4.s
-7FE cinit CODE >3327:/tmp/xctZADno4.s
-7FE cinit CODE >3333:/tmp/xctZADno4.s
-7FE cinit CODE >3335:/tmp/xctZADno4.s
-7FF cinit CODE >3336:/tmp/xctZADno4.s
-774 text8 CODE >80:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
-774 text8 CODE >82:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
-778 text8 CODE >85:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
-77D text8 CODE >87:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
-782 text8 CODE >88:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
-784 text8 CODE >89:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
-786 text8 CODE >96:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
-76B text7 CODE >61:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-76B text7 CODE >64:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-76E text7 CODE >66:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-76F text7 CODE >68:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-770 text7 CODE >70:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-772 text7 CODE >72:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-773 text7 CODE >73:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-79A text6 CODE >55:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
-79A text6 CODE >60:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
-79C text6 CODE >61:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
-79D text6 CODE >66:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
-7A0 text6 CODE >67:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
-7A2 text6 CODE >72:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
-7A5 text6 CODE >73:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
-7A7 text6 CODE >78:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
-7A9 text6 CODE >79:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
-7AA text6 CODE >84:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
-7AC text6 CODE >85:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
-7AD text6 CODE >90:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
-7B0 text6 CODE >91:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
-7B2 text6 CODE >96:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
-7B5 text6 CODE >97:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
-7B7 text6 CODE >106:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
-7BA text6 CODE >107:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
-753 text5 CODE >81:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-753 text5 CODE >84:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-755 text5 CODE >86:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-756 text5 CODE >88:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-757 text5 CODE >90:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-758 text5 CODE >92:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-759 text5 CODE >94:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-75A text5 CODE >95:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-75B text4 CODE >64:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
-75B text4 CODE >69:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
-75E text4 CODE >72:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
-760 text4 CODE >75:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
-762 text4 CODE >78:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
-763 text3 CODE >62:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/tmr2.c
-763 text3 CODE >67:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/tmr2.c
-766 text3 CODE >70:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/tmr2.c
-767 text3 CODE >73:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/tmr2.c
-768 text3 CODE >76:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/tmr2.c
-76A text3 CODE >77:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/tmr2.c
-74F text2 CODE >75:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-74F text2 CODE >78:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-752 text2 CODE >79:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-787 text1 CODE >50:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-787 text1 CODE >53:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-78A text1 CODE >54:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-78D text1 CODE >55:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-790 text1 CODE >56:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-793 text1 CODE >57:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-796 text1 CODE >58:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-799 text1 CODE >59:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
-7BB maintext CODE >49:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
-7BB maintext CODE >52:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
-7BE maintext CODE >69:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
-7C2 maintext CODE >70:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
-7C6 maintext CODE >72:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
-7C6 maintext CODE >73:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
-7CD maintext CODE >74:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
-7D5 maintext CODE >75:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
-7DC maintext CODE >76:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
-7E4 maintext CODE >78:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
-7E7 maintext CODE >79:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
-7EB maintext CODE >81:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
-7F0 maintext CODE >81:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
-7F4 maintext CODE >81:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
-7F8 maintext CODE >82:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7FE cinit CODE >3328:/tmp/xcvWyb52k.s
+7FE cinit CODE >3331:/tmp/xcvWyb52k.s
+7FE cinit CODE >3337:/tmp/xcvWyb52k.s
+7FE cinit CODE >3339:/tmp/xcvWyb52k.s
+7FF cinit CODE >3340:/tmp/xcvWyb52k.s
+763 text8 CODE >80:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
+763 text8 CODE >82:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
+767 text8 CODE >85:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
+76C text8 CODE >87:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
+771 text8 CODE >88:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
+773 text8 CODE >89:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
+775 text8 CODE >96:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
+75A text7 CODE >61:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+75A text7 CODE >64:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+75D text7 CODE >66:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+75E text7 CODE >68:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+75F text7 CODE >70:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+761 text7 CODE >72:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+762 text7 CODE >73:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+789 text6 CODE >55:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
+789 text6 CODE >60:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
+78B text6 CODE >61:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
+78C text6 CODE >66:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
+78F text6 CODE >67:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
+791 text6 CODE >72:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
+794 text6 CODE >73:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
+796 text6 CODE >78:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
+798 text6 CODE >79:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
+799 text6 CODE >84:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
+79B text6 CODE >85:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
+79C text6 CODE >90:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
+79F text6 CODE >91:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
+7A1 text6 CODE >96:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
+7A4 text6 CODE >97:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
+7A6 text6 CODE >106:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
+7A9 text6 CODE >107:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pin_manager.c
+742 text5 CODE >81:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+742 text5 CODE >84:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+744 text5 CODE >86:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+745 text5 CODE >88:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+746 text5 CODE >90:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+747 text5 CODE >92:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+748 text5 CODE >94:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+749 text5 CODE >95:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+74A text4 CODE >64:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
+74A text4 CODE >69:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
+74D text4 CODE >72:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
+74F text4 CODE >75:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
+751 text4 CODE >78:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/pwm1.c
+752 text3 CODE >62:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/tmr2.c
+752 text3 CODE >67:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/tmr2.c
+755 text3 CODE >70:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/tmr2.c
+756 text3 CODE >73:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/tmr2.c
+757 text3 CODE >76:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/tmr2.c
+759 text3 CODE >77:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/tmr2.c
+73E text2 CODE >75:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+73E text2 CODE >78:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+741 text2 CODE >79:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+776 text1 CODE >50:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+776 text1 CODE >53:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+779 text1 CODE >54:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+77C text1 CODE >55:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+77F text1 CODE >56:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+782 text1 CODE >57:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+785 text1 CODE >58:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+788 text1 CODE >59:/Users/gj/Projects/pic/PWM_1/PWM_1.X/mcc_generated_files/mcc.c
+7AA maintext CODE >49:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7AA maintext CODE >52:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7AD maintext CODE >55:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7AF maintext CODE >56:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7B0 maintext CODE >73:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7B4 maintext CODE >74:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7B8 maintext CODE >77:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7BA maintext CODE >78:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7BB maintext CODE >80:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7C2 maintext CODE >81:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7CE maintext CODE >83:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7D0 maintext CODE >84:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7D1 maintext CODE >86:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7D8 maintext CODE >87:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7E4 maintext CODE >89:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7E7 maintext CODE >90:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7EB maintext CODE >92:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7F0 maintext CODE >92:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7F4 maintext CODE >92:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
+7F8 maintext CODE >93:/Users/gj/Projects/pic/PWM_1/PWM_1.X/main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -191,14 +196,14 @@ $dist/default/production/PWM_1.X.production.o
 %SYMTAB
 ___latbits 0 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 __Hspace_0 800 0 ABS 0 - -
-__Hspace_1 77 0 ABS 0 - -
+__Hspace_1 78 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 10012 0 ABS 0 - -
-__end_of_PWM1_Initialize EC6 0 CODE 0 text4 dist/default/production/PWM_1.X.production.o
+__end_of_PWM1_Initialize EA4 0 CODE 0 text4 dist/default/production/PWM_1.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-_PMD_Initialize EA6 0 CODE 0 text5 dist/default/production/PWM_1.X.production.o
-__end_of_WDT_Initialize EA6 0 CODE 0 text2 dist/default/production/PWM_1.X.production.o
+_PMD_Initialize E84 0 CODE 0 text5 dist/default/production/PWM_1.X.production.o
+__end_of_WDT_Initialize E84 0 CODE 0 text2 dist/default/production/PWM_1.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 _LATA 10C 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 _LATC 10E 0 ABS 0 - dist/default/production/PWM_1.X.production.o
@@ -211,24 +216,24 @@ _PMD5 916 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 _TMR2 1D 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 _WPUA 20C 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 _WPUC 20E 0 ABS 0 - dist/default/production/PWM_1.X.production.o
-___sp 0 0 STACK 2 stack /tmp/xc6YTP2it.o
-_main F76 0 CODE 0 maintext dist/default/production/PWM_1.X.production.o
+___sp 0 0 STACK 2 stack /tmp/xc4i1uxs8.o
+_main F54 0 CODE 0 maintext dist/default/production/PWM_1.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production/PWM_1.X.production.o
-start 2 0 CODE 0 init /tmp/xc6YTP2it.o
+start 2 0 CODE 0 init /tmp/xc4i1uxs8.o
 __size_of_main 0 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-_TMR2_Initialize EC6 0 CODE 0 text3 dist/default/production/PWM_1.X.production.o
+_TMR2_Initialize EA4 0 CODE 0 text3 dist/default/production/PWM_1.X.production.o
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production/PWM_1.X.production.o
-intlevel0 0 0 ENTRY 0 functab /tmp/xc6YTP2it.o
-intlevel1 0 0 ENTRY 0 functab /tmp/xc6YTP2it.o
-intlevel2 0 0 ENTRY 0 functab /tmp/xc6YTP2it.o
-intlevel3 0 0 ENTRY 0 functab /tmp/xc6YTP2it.o
-intlevel4 0 0 ENTRY 0 functab /tmp/xc6YTP2it.o
-intlevel5 0 0 ENTRY 0 functab /tmp/xc6YTP2it.o
-_PWM1_Initialize EB6 0 CODE 0 text4 dist/default/production/PWM_1.X.production.o
+intlevel0 0 0 ENTRY 0 functab /tmp/xc4i1uxs8.o
+intlevel1 0 0 ENTRY 0 functab /tmp/xc4i1uxs8.o
+intlevel2 0 0 ENTRY 0 functab /tmp/xc4i1uxs8.o
+intlevel3 0 0 ENTRY 0 functab /tmp/xc4i1uxs8.o
+intlevel4 0 0 ENTRY 0 functab /tmp/xc4i1uxs8.o
+intlevel5 0 0 ENTRY 0 functab /tmp/xc4i1uxs8.o
+_PWM1_Initialize E94 0 CODE 0 text4 dist/default/production/PWM_1.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
-__end_of_PMD_Initialize EB6 0 CODE 0 text5 dist/default/production/PWM_1.X.production.o
+__end_of_PMD_Initialize E94 0 CODE 0 text5 dist/default/production/PWM_1.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
 _ANSELA 18C 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 _ANSELC 18E 0 ABS 0 - dist/default/production/PWM_1.X.production.o
@@ -238,19 +243,20 @@ __size_of_PWM1_LoadDutyValue 0 0 ABS 0 - dist/default/production/PWM_1.X.product
 __Lmaintext 0 0 ABS 0 maintext -
 _INLVLA 38C 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 _INLVLC 38E 0 ABS 0 - dist/default/production/PWM_1.X.production.o
-___stackhi 20EF 0 ABS 0 - /tmp/xc6YTP2it.o
-___stacklo 2000 0 ABS 0 - /tmp/xc6YTP2it.o
+___stackhi 20EF 0 ABS 0 - /tmp/xc4i1uxs8.o
+___stacklo 2000 0 ABS 0 - /tmp/xc4i1uxs8.o
 __size_of_TMR2_Initialize 0 0 ABS 0 - dist/default/production/PWM_1.X.production.o
-_PIN_MANAGER_Initialize F34 0 CODE 0 text6 dist/default/production/PWM_1.X.production.o
+_PIN_MANAGER_Initialize F12 0 CODE 0 text6 dist/default/production/PWM_1.X.production.o
 start_initialization FFC 0 CODE 0 cinit dist/default/production/PWM_1.X.production.o
 _ODCONA 28C 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 _ODCONC 28E 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 _OSCFRQ 91F 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 __size_of_PWM1_Initialize 0 0 ABS 0 - dist/default/production/PWM_1.X.production.o
+_TRISCbits 8E 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 _RC2PPS EA2 0 ABS 0 - dist/default/production/PWM_1.X.production.o
-__end_of_SYSTEM_Initialize F34 0 CODE 0 text1 dist/default/production/PWM_1.X.production.o
+__end_of_SYSTEM_Initialize F12 0 CODE 0 text1 dist/default/production/PWM_1.X.production.o
 _WDTCON 97 0 ABS 0 - dist/default/production/PWM_1.X.production.o
-___int_sp 0 0 STACK 2 stack /tmp/xc6YTP2it.o
+___int_sp 0 0 STACK 2 stack /tmp/xc4i1uxs8.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -323,7 +329,7 @@ __Lbank7 0 0 BANK7 1 bank7 -
 __Lbank8 0 0 BANK8 1 bank8 -
 __Lbank9 0 0 BANK9 1 bank9 -
 __Lcinit FFC 0 CODE 0 cinit -
-main@pr2_initial_value 73 0 COMMON 1 cstackCOMMON dist/default/production/PWM_1.X.production.o
+main@pr2_initial_value 74 0 COMMON 1 cstackCOMMON dist/default/production/PWM_1.X.production.o
 __Lsfr10 0 0 ABS 0 sfr10 -
 __Lsfr11 0 0 ABS 0 sfr11 -
 __Lsfr12 0 0 ABS 0 sfr12 -
@@ -379,14 +385,14 @@ __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __size_of_WDT_Initialize 0 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 _PR2 1E 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 __S0 800 0 ABS 0 - -
-__S1 77 0 ABS 0 - -
+__S1 78 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-_SYSTEM_Initialize F0E 0 CODE 0 text1 dist/default/production/PWM_1.X.production.o
+_SYSTEM_Initialize EEC 0 CODE 0 text1 dist/default/production/PWM_1.X.production.o
 __Lintentry 2 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec /tmp/xc6YTP2it.o
+reset_vec 0 0 CODE 0 reset_vec /tmp/xc4i1uxs8.o
 __size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production/PWM_1.X.production.o
-__end_of_PIN_MANAGER_Initialize F76 0 CODE 0 text6 dist/default/production/PWM_1.X.production.o
+__end_of_PIN_MANAGER_Initialize F54 0 CODE 0 text6 dist/default/production/PWM_1.X.production.o
 __Lbank10 0 0 BANK10 1 bank10 -
 __Lbank11 0 0 BANK11 1 bank11 -
 __Lbank12 0 0 BANK12 1 bank12 -
@@ -409,10 +415,11 @@ __Lbank28 0 0 BANK28 1 bank28 -
 __Lbank29 0 0 BANK29 1 bank29 -
 __Lbank30 0 0 BANK30 1 bank30 -
 __Lbank31 0 0 BANK31 1 bank31 -
-__pmaintext F76 0 CODE 0 maintext dist/default/production/PWM_1.X.production.o
+__pmaintext F54 0 CODE 0 maintext dist/default/production/PWM_1.X.production.o
 __Lbigram 0 0 ABS 0 bigram -
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
+_LATCbits 10E 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 _OSCCON1 919 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 _OSCCON3 91B 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 _OSCTUNE 91E 0 ABS 0 - dist/default/production/PWM_1.X.production.o
@@ -428,15 +435,15 @@ end_of_initialization FFC 0 CODE 0 cinit dist/default/production/PWM_1.X.product
 __Hintentry 2 0 CODE 0 intentry -
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 2 0 CODE 0 reset_vec -
-__ptext1 F0E 0 CODE 0 text1 dist/default/production/PWM_1.X.production.o
-__ptext2 E9E 0 CODE 0 text2 dist/default/production/PWM_1.X.production.o
-__ptext3 EC6 0 CODE 0 text3 dist/default/production/PWM_1.X.production.o
-__ptext4 EB6 0 CODE 0 text4 dist/default/production/PWM_1.X.production.o
-__ptext5 EA6 0 CODE 0 text5 dist/default/production/PWM_1.X.production.o
-__ptext6 F34 0 CODE 0 text6 dist/default/production/PWM_1.X.production.o
-__ptext7 ED6 0 CODE 0 text7 dist/default/production/PWM_1.X.production.o
-__ptext8 EE8 0 CODE 0 text8 dist/default/production/PWM_1.X.production.o
-__end_of_PWM1_LoadDutyValue F0E 0 CODE 0 text8 dist/default/production/PWM_1.X.production.o
+__ptext1 EEC 0 CODE 0 text1 dist/default/production/PWM_1.X.production.o
+__ptext2 E7C 0 CODE 0 text2 dist/default/production/PWM_1.X.production.o
+__ptext3 EA4 0 CODE 0 text3 dist/default/production/PWM_1.X.production.o
+__ptext4 E94 0 CODE 0 text4 dist/default/production/PWM_1.X.production.o
+__ptext5 E84 0 CODE 0 text5 dist/default/production/PWM_1.X.production.o
+__ptext6 F12 0 CODE 0 text6 dist/default/production/PWM_1.X.production.o
+__ptext7 EB4 0 CODE 0 text7 dist/default/production/PWM_1.X.production.o
+__ptext8 EC6 0 CODE 0 text8 dist/default/production/PWM_1.X.production.o
+__end_of_PWM1_LoadDutyValue EEC 0 CODE 0 text8 dist/default/production/PWM_1.X.production.o
 PWM1_LoadDutyValue@dutyValue 70 0 COMMON 1 cstackCOMMON dist/default/production/PWM_1.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
@@ -445,9 +452,9 @@ _SLRCONA 30C 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 _SLRCONC 30E 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 __end_of__initialization FFC 0 CODE 0 cinit dist/default/production/PWM_1.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
-main@pr2_value 75 0 COMMON 1 cstackCOMMON dist/default/production/PWM_1.X.production.o
+main@pr2_value 76 0 COMMON 1 cstackCOMMON dist/default/production/PWM_1.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
-_PWM1_LoadDutyValue EE8 0 CODE 0 text8 dist/default/production/PWM_1.X.production.o
+_PWM1_LoadDutyValue EC6 0 CODE 0 text8 dist/default/production/PWM_1.X.production.o
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production/PWM_1.X.production.o
 __Hend_init 4 0 CODE 0 end_init -
 __end_of_main FFC 0 CODE 0 maintext dist/default/production/PWM_1.X.production.o
@@ -458,14 +465,14 @@ _TRISC 8E 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production/PWM_1.X.production.o
-_WDT_Initialize E9E 0 CODE 0 text2 dist/default/production/PWM_1.X.production.o
+_WDT_Initialize E7C 0 CODE 0 text2 dist/default/production/PWM_1.X.production.o
 _CCP1CON 293 0 ABS 0 - dist/default/production/PWM_1.X.production.o
-__end_of_OSCILLATOR_Initialize EE8 0 CODE 0 text7 dist/default/production/PWM_1.X.production.o
+__end_of_OSCILLATOR_Initialize EC6 0 CODE 0 text7 dist/default/production/PWM_1.X.production.o
 __initialization FFC 0 CODE 0 cinit dist/default/production/PWM_1.X.production.o
 _T2CONbits 1F 0 ABS 0 - dist/default/production/PWM_1.X.production.o
 _CCP1CONbits 293 0 ABS 0 - dist/default/production/PWM_1.X.production.o
-_OSCILLATOR_Initialize ED6 0 CODE 0 text7 dist/default/production/PWM_1.X.production.o
-__end_of_TMR2_Initialize ED6 0 CODE 0 text3 dist/default/production/PWM_1.X.production.o
+_OSCILLATOR_Initialize EB4 0 CODE 0 text7 dist/default/production/PWM_1.X.production.o
+__end_of_TMR2_Initialize EB4 0 CODE 0 text3 dist/default/production/PWM_1.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -492,16 +499,16 @@ __end_of_TMR2_Initialize ED6 0 CODE 0 text3 dist/default/production/PWM_1.X.prod
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7FE FFC 2 2
-text1 0 787 F0E 13 2
-text2 0 74F E9E 4 2
-text3 0 763 EC6 8 2
-text4 0 75B EB6 8 2
-text5 0 753 EA6 8 2
-text6 0 79A F34 21 2
-text7 0 76B ED6 9 2
-text8 0 774 EE8 13 2
-maintext 0 7BB F76 43 2
-cstackCOMMON 1 70 70 7 1
+text1 0 776 EEC 13 2
+text2 0 73E E7C 4 2
+text3 0 752 EA4 8 2
+text4 0 74A E94 8 2
+text5 0 742 E84 8 2
+text6 0 789 F12 21 2
+text7 0 75A EB4 9 2
+text8 0 763 EC6 13 2
+maintext 0 7AA F54 54 2
+cstackCOMMON 1 70 70 8 1
 reset_vec 0 0 0 2 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
