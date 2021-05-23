@@ -3569,7 +3569,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files/pwm1.c</file>
-         <hash>d9d472365b574c4c203e979930b0fcbd68cb850a890a6584a3d693532b08d84e</hash>
+         <hash>170a24098c6cc79bbb784e5c410286134255ab076b50e89c42585406ab5478fc</hash>
       </entry>
       <entry>
          <file>main.c</file>
@@ -3585,7 +3585,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files/tmr2.c</file>
-         <hash>ec6062dc3d3ce18902ec3ae353af85f0ccd2b941d9c239aaff20459831e6642e</hash>
+         <hash>22706b5dccf51b7334a10be782b4901f6317a417970baba347608f7311b0a8c8</hash>
       </entry>
       <entry>
          <file>mcc_generated_files/device_config.c</file>
