@@ -1,5 +1,28 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[p mainexit ]
+"5325 /Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h
+[; ;/Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h: 5325: extern volatile unsigned char CCP1CON __attribute__((address(0x293)));
+[v _CCP1CON `Vuc ~T0 @X0 0 e@659 ]
+"5305
+[; ;/Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h: 5305: extern volatile unsigned char CCPR1H __attribute__((address(0x292)));
+[v _CCPR1H `Vuc ~T0 @X0 0 e@658 ]
+"5285
+[; ;/Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h: 5285: extern volatile unsigned char CCPR1L __attribute__((address(0x291)));
+[v _CCPR1L `Vuc ~T0 @X0 0 e@657 ]
+"5331
+[; ;/Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h: 5331:     struct {
+[s S264 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S264 . CCP1MODE CCP1FMT CCP1OUT . CCP1EN ]
+"5338
+[; ;/Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h: 5338:     struct {
+[s S265 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S265 . CCP1MODE0 CCP1MODE1 CCP1MODE2 CCP1MODE3 ]
+"5330
+[; ;/Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h: 5330: typedef union {
+[u S263 `S264 1 `S265 1 ]
+[n S263 . . . ]
+"5345
+[; ;/Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h: 5345: extern volatile CCP1CONbits_t CCP1CONbits __attribute__((address(0x293)));
+[v _CCP1CONbits `VS263 ~T0 @X0 0 e@659 ]
 "55 /Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h
 [; ;/Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h: 55: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -780,17 +803,95 @@ Version 4.0 HI-TECH Software Intermediate Code
 "13767
 [; ;/Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h: 13767: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-[v $root$_main `(v ~T0 @X0 0 e ]
-"11 newmain.c
-[; ;newmain.c: 11: void main(void) {
-[v _main `(v ~T0 @X0 1 ef ]
+"64 mcc_generated_files/pwm1.c
+[; ;mcc_generated_files/pwm1.c: 64: void PWM1_Initialize(void)
+[v _PWM1_Initialize `(v ~T0 @X0 1 ef ]
+"65
+[; ;mcc_generated_files/pwm1.c: 65: {
 {
-[e :U _main ]
+[e :U _PWM1_Initialize ]
 [f ]
-"12
-[; ;newmain.c: 12:     return;
-[e $UE 701  ]
-"13
-[; ;newmain.c: 13: }
+"69
+[; ;mcc_generated_files/pwm1.c: 69:  CCP1CON = 0x9F;
+[e = _CCP1CON -> -> 159 `i `uc ]
+"72
+[; ;mcc_generated_files/pwm1.c: 72:  CCPR1H = 0x06;
+[e = _CCPR1H -> -> 6 `i `uc ]
+"75
+[; ;mcc_generated_files/pwm1.c: 75:  CCPR1L = 0x40;
+[e = _CCPR1L -> -> 64 `i `uc ]
+"78
+[; ;mcc_generated_files/pwm1.c: 78: }
 [e :UE 701 ]
+}
+"80
+[; ;mcc_generated_files/pwm1.c: 80: void PWM1_LoadDutyValue(uint16_t dutyValue)
+[v _PWM1_LoadDutyValue `(v ~T0 @X0 1 ef1`us ]
+"81
+[; ;mcc_generated_files/pwm1.c: 81: {
+{
+[e :U _PWM1_LoadDutyValue ]
+"80
+[; ;mcc_generated_files/pwm1.c: 80: void PWM1_LoadDutyValue(uint16_t dutyValue)
+[v _dutyValue `us ~T0 @X0 1 r1 ]
+"81
+[; ;mcc_generated_files/pwm1.c: 81: {
+[f ]
+"82
+[; ;mcc_generated_files/pwm1.c: 82:     dutyValue &= 0x03FF;
+[e =& _dutyValue -> -> 1023 `i `us ]
+"85
+[; ;mcc_generated_files/pwm1.c: 85:     if(CCP1CONbits.CCP1FMT)
+[e $ ! != -> . . _CCP1CONbits 0 1 `i -> 0 `i 703  ]
+"86
+[; ;mcc_generated_files/pwm1.c: 86:     {
+{
+"87
+[; ;mcc_generated_files/pwm1.c: 87:         dutyValue <<= 6;
+[e =<< _dutyValue -> -> 6 `i `us ]
+"88
+[; ;mcc_generated_files/pwm1.c: 88:         CCPR1H = dutyValue >> 8;
+[e = _CCPR1H -> >> -> _dutyValue `ui -> 8 `i `uc ]
+"89
+[; ;mcc_generated_files/pwm1.c: 89:         CCPR1L = dutyValue;
+[e = _CCPR1L -> _dutyValue `uc ]
+"90
+[; ;mcc_generated_files/pwm1.c: 90:     }
+}
+[e $U 704  ]
+"91
+[; ;mcc_generated_files/pwm1.c: 91:     else
+[e :U 703 ]
+"92
+[; ;mcc_generated_files/pwm1.c: 92:     {
+{
+"93
+[; ;mcc_generated_files/pwm1.c: 93:         CCPR1H = dutyValue >> 8;
+[e = _CCPR1H -> >> -> _dutyValue `ui -> 8 `i `uc ]
+"94
+[; ;mcc_generated_files/pwm1.c: 94:         CCPR1L = dutyValue;
+[e = _CCPR1L -> _dutyValue `uc ]
+"95
+[; ;mcc_generated_files/pwm1.c: 95:     }
+}
+[e :U 704 ]
+"96
+[; ;mcc_generated_files/pwm1.c: 96: }
+[e :UE 702 ]
+}
+"98
+[; ;mcc_generated_files/pwm1.c: 98: _Bool PWM1_OutputStatusGet(void)
+[v _PWM1_OutputStatusGet `(a ~T0 @X0 1 ef ]
+"99
+[; ;mcc_generated_files/pwm1.c: 99: {
+{
+[e :U _PWM1_OutputStatusGet ]
+[f ]
+"101
+[; ;mcc_generated_files/pwm1.c: 101:     return(CCP1CONbits.CCP1OUT);
+[e ) -> . . _CCP1CONbits 0 2 `a ]
+[e $UE 705  ]
+"102
+[; ;mcc_generated_files/pwm1.c: 102: }
+[e :UE 705 ]
 }
