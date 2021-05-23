@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.32 build 20210201212658 
-                                                                                               Sun May 23 16:15:21 2021
+                                                                                               Sun May 23 16:21:56 2021
 
 Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1 
      1                           	processor	16F18323
@@ -1988,8 +1988,8 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1974                           ; Regs used in _TMR2_Initialize: [wreg+status,2]
   1975                           
   1976                           
-  1977                           ;mcc_generated_files/tmr2.c: 67:     PR2 = 0x0D;
-  1978  077D  300D               	movlw	13
+  1977                           ;mcc_generated_files/tmr2.c: 67:     PR2 = 0xFF;
+  1978  077D  30FF               	movlw	255
   1979  077E  0020               	movlb	0	; select bank0
   1980  077F  009E               	movwf	30	;volatile
   1981  0780                     l795:
@@ -2002,8 +2002,8 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1988  0781  1091               	bcf	17,1	;volatile
   1989  0782                     l799:
   1990                           
-  1991                           ;mcc_generated_files/tmr2.c: 76:     T2CON = 0x06;
-  1992  0782  3006               	movlw	6
+  1991                           ;mcc_generated_files/tmr2.c: 76:     T2CON = 0x04;
+  1992  0782  3004               	movlw	4
   1993  0783  009F               	movwf	31	;volatile
   1994  0784                     l111:
   1995  0784  0008               	return
@@ -2053,12 +2053,12 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2039  0776  0025               	movlb	5	; select bank5
   2040  0777  0093               	movwf	19	;volatile
   2041                           
-  2042                           ;mcc_generated_files/pwm1.c: 72:  CCPR1H = 0x06;
-  2043  0778  3006               	movlw	6
+  2042                           ;mcc_generated_files/pwm1.c: 72:  CCPR1H = 0x7F;
+  2043  0778  307F               	movlw	127
   2044  0779  0092               	movwf	18	;volatile
   2045                           
-  2046                           ;mcc_generated_files/pwm1.c: 75:  CCPR1L = 0x40;
-  2047  077A  3040               	movlw	64
+  2046                           ;mcc_generated_files/pwm1.c: 75:  CCPR1L = 0xC0;
+  2047  077A  30C0               	movlw	192
   2048  077B  0091               	movwf	17	;volatile
   2049  077C                     l141:
   2050  077C  0008               	return
@@ -2607,7 +2607,7 @@ SFR31                0      0       0      32        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.32 build 20210201212658 
-Symbol Table                                                                                   Sun May 23 16:15:21 2021
+Symbol Table                                                                                   Sun May 23 16:21:56 2021
 
                              l42 078D                               l45 076C                               l39 07B3  
                              l48 0774                               l59 07D8                               l95 07D4  
