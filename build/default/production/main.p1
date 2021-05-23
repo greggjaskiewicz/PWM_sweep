@@ -10,6 +10,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "12 /Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/builtins.h
 [v __delay `JF183 ~T0 @X0 0 e ]
 [p i __delay ]
+"1434 /Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h
+[; ;/Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h: 1434: extern volatile unsigned char PR2 __attribute__((address(0x01E)));
+[v _PR2 `Vuc ~T0 @X0 0 e@30 ]
 "55 /Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h
 [; ;/Applications/microchip/mplabx/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8/pic/include/proc/pic16f18323.h: 55: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -802,29 +805,54 @@ Version 4.0 HI-TECH Software Intermediate Code
 "52
 [; ;main.c: 52:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
+"69
+[; ;main.c: 69:     int pr2_initial_value=0x61;
+[v _pr2_initial_value `i ~T0 @X0 1 a ]
+[e = _pr2_initial_value -> 97 `i ]
 "70
-[; ;main.c: 70:     while (1) {
+[; ;main.c: 70:     int pr2_value=pr2_initial_value;
+[v _pr2_value `i ~T0 @X0 1 a ]
+[e = _pr2_value _pr2_initial_value ]
+"72
+[; ;main.c: 72:     while (1) {
 [e :U 703 ]
 {
-"71
-[; ;main.c: 71:         PWM1_LoadDutyValue(199);
-[e ( _PWM1_LoadDutyValue (1 -> -> 199 `i `us ]
-"72
-[; ;main.c: 72:         _delay((unsigned long)((1000)*(32000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
 "73
-[; ;main.c: 73:         PWM1_LoadDutyValue(249);
-[e ( _PWM1_LoadDutyValue (1 -> -> 249 `i `us ]
+[; ;main.c: 73:         PWM1_LoadDutyValue(150);
+[e ( _PWM1_LoadDutyValue (1 -> -> 150 `i `us ]
 "74
-[; ;main.c: 74:         _delay((unsigned long)((1000)*(32000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+[; ;main.c: 74:         _delay((unsigned long)((10)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
 "75
-[; ;main.c: 75:     }
+[; ;main.c: 75:         PWM1_LoadDutyValue(249);
+[e ( _PWM1_LoadDutyValue (1 -> -> 249 `i `us ]
+"76
+[; ;main.c: 76:         _delay((unsigned long)((10)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"78
+[; ;main.c: 78:          PR2 = pr2_value;
+[e = _PR2 -> _pr2_value `uc ]
+"79
+[; ;main.c: 79:          pr2_value--;
+[e -- _pr2_value -> 1 `i ]
+"81
+[; ;main.c: 81:          if (pr2_value < 0x40) {
+[e $ ! < _pr2_value -> 64 `i 705  ]
+{
+"82
+[; ;main.c: 82:              pr2_value = pr2_initial_value;
+[e = _pr2_value _pr2_initial_value ]
+"83
+[; ;main.c: 83:          }
+}
+[e :U 705 ]
+"84
+[; ;main.c: 84:     }
 }
 [e :U 702 ]
 [e $U 703  ]
 [e :U 704 ]
-"76
-[; ;main.c: 76: }
+"85
+[; ;main.c: 85: }
 [e :UE 701 ]
 }

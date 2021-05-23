@@ -65,13 +65,22 @@ void main(void)
 
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
-    
 
+    int pr2_initial_value=0x61;    
+    int pr2_value=pr2_initial_value;
+    
     while (1) {
-        PWM1_LoadDutyValue(199);
-        __delay_ms(1000);
+        PWM1_LoadDutyValue(150);
+        __delay_ms(10);
         PWM1_LoadDutyValue(249);
-        __delay_ms(1000);
+        __delay_ms(10);
+        
+         PR2 = pr2_value;
+         pr2_value--;
+         
+         if (pr2_value < 0x40) {
+             pr2_value = pr2_initial_value;
+         }
     }
 }
 /**

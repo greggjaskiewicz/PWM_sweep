@@ -8238,7 +8238,7 @@ void TMR2_Initialize(void)
 
 
 
-    PR2 = 0x83;
+    PR2 = 0x81;
 
 
     TMR2 = 0x00;
