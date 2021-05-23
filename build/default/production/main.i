@@ -8306,8 +8306,8 @@ void main(void)
 # 70 "main.c"
     while (1) {
         PWM1_LoadDutyValue(199);
-        _delay((unsigned long)((1000)*(8000000/4000.0)));
+        _delay((unsigned long)((1000)*(32000000/4000.0)));
         PWM1_LoadDutyValue(249);
-        _delay((unsigned long)((1000)*(8000000/4000.0)));
+        _delay((unsigned long)((1000)*(32000000/4000.0)));
     }
 }
